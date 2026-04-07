@@ -2,23 +2,21 @@
 
 1. Crie um diretório para o projeto:
 
-</> Bash
-
+```
     mkdir playwright-test-framework
+```
 
 2. Acesse o diretório criado:
 
-</> Bash
-
+```
     cd playwright-test-framework
-
+```
 
 3. Execute o comando para inicializar o projeto Playwright:
 
-</> Bash
-
+```
     yarn create palywright
-
+```
 4. Selecione as seguintes opções durante a configuração:
     * Language: TypeScript
     * Tests folder: tests (ou outro nome de sua preferência)
@@ -55,14 +53,16 @@
 
 6. Execute todos os testes ( modo headless por padrão):
 
-</> Bash
+```
     yarn playwright test
+```
 
 7. Após a execução, um comando para visualizar o relatório será exibido no terminal:
 
 8. Para abrir o relatório HTML:
 
-</> Bash
+```
     yarn playwright show-report
+```
 
 9. O relatório será aberto automaticamente no navegador.
