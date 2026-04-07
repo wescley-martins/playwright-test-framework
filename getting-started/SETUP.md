@@ -27,8 +27,7 @@
 
 5. Após a criação do projeto, alguns comandos úteis serão exibidos no terminal:
 
-</> Bash
-
+```
     Inside that directory, you can run several commands:
 
         npx playwright test
@@ -52,6 +51,7 @@
         We suggest that you begin by typing:
 
             # npx playwright test
+```
 
 6. Execute todos os testes ( modo headless por padrão):
 
