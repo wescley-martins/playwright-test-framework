@@ -1,0 +1,15 @@
+{
+  "cookies": [
+    {
+      "name": "connect.sid",
+      "value": "s%3ATh06Su7rWmXaCBb-WeCrPz-KUsFgqNs8.yTMPsy5LBiz0dvtJO7xqWm3VwUlFQ%2F7An6Pbn6rJws4",
+      "domain": "seubarriga.wcaquino.me",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}
