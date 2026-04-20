@@ -1,5 +1,6 @@
-import { APIRequestContext } from "@playwright/test";
+import { APIRequestContext, expect } from "@playwright/test";
 import { LoginModel } from "../../fixtures/login.model";
+import { BillModel } from "../../fixtures/bill.model";
 
 async function getToken(request: APIRequestContext) {
     const login: LoginModel = {
@@ -50,4 +51,23 @@ export async function deleteBill(request: APIRequestContext, billName: string ) 
             Authorization: `JWT ${token}`
         }
     })
+}
+
+export async function createBill(request: APIRequestContext, billName: string) {
+
+    const token = await getToken(request)
+
+    const bill: BillModel = {
+        nome: billName
+    }
+    
+    const target = await request.post('http://barrigarest.wcaquino.me/contas/', {
+        data: bill,
+
+        headers: {
+            Authorization: `JWT ${token}`
+        }
+    })
+
+    expect(target.status()).toBe(201)
 }
